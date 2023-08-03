@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    
+    }
+
+
+img{
+    max-width: 100%
+}
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+.d-flex{
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flexbox;
+}
+.wrap{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.justify-end{
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+.justify-start{
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-flex-pack: start;
+}
+.align-items-center{
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+}
+.two-column{
+    flex: 0 0 49%;
+    -webkit-flex: 0 0 49%;
+    -moz-flex: 0 0 49%;
+    -ms-flex:0 0 49%;
+}
+.three-column{
+    flex: 0 0 33%;
+    -webkit-flex: 0 0 33%;
+    -moz-flex: 0 0 33%;
+    -ms-flex:0 0 33%;
+}
+.four-column{
+    flex: 0 0 24%;
+    -webkit-flex: 0 0 24%;
+    -moz-flex: 0 0 24%;
+    -ms-flex:0 0 24%;
+}
+a{
+    text-decoration: none;
+}
+
+header .nav-logo{
+    list-style: none;
+    padding: 0;
+}
+header .nav-logo li{
+    margin-left: 67px;
+}
+header .nav-logo li a{
+    display: block;
+    color: #2C2D3C;
+    font-size: 1.6rem;
+    letter-spacing: 0.46px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    transition: all 0.5s linear;
+    position: relative;
+    padding-bottom: 8px;
+}
+header .nav-logo li a:last-of-type{
+    padding-right: 2px;
+}
+
+header .nav-logo li a.active,
+header .nav-logo li a:hover{
+    color: #2C2D3C;
+}
+
+header .nav-logo li a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2C2D3C;
+    transition: all 0.5s linear;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+header .nav-logo li a.active:after,
+header .nav-logo li a:hover:after{
+    width: 100%;
+}
+.proba{
+    position: relative;
+}
+.proba-teksta{
+    position: absolute;
+    text-align: left;
+    bottom: 40%;
+    left: 0;
+    color: #FFFFFF;
+    font-size:5rem;
+    background-color: #2C2D3C;
+    padding: 18px;
+    letter-spacing: 1.99px;
+}
+
+.home{
+    padding: 100px 0 100px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.link-button{
+    display: inline-block;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    letter-spacing: 0.82px;
+    line-height: 26px;
+    text-align: center;
+    border: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(139.4deg, #EBB970 0%, #EBB970 100%);
+    color: #fff;
+    font-size: 1.6rem;
+}
+.pointer{
+    cursor: pointer;
+}
+.home p{
+    margin-bottom: 32px;
+    font-size: 1.8rem;
+}
+.services{
+    padding: 50px 0;
+    text-align: center;
+}
+.services .active-yelow{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #EBB970;
+    display: inline-block;
+}
+
+.services h2{
+    margin-bottom: 65px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1.06px;
+    line-height: 43px;
+    text-align: center;
+}
+.box{
+    height: 307px;
+    width: 361px;
+    background-color: #2C2D3C;
+    box-shadow: 0 12px 13px 0 rgba(145,145,145,0.5);
+}
+.box a{
+    color: #FFFFFF;
+    font-size: 45px;
+    padding-top: 10px;
+}
+.fa-regular,
+.fa-solid{
+    height: 88px;
+    width: 88px;
+    background-color: #EBB970;
+}
+.services-item{
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.services-text{
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    font-size: 2.0rem;
+    color: #FFFFFF;
+}
+
+.glasses-img{
+    height: 400px;
+    width: 1500px;
+    opacity: 0.5;
+
+
+
+}
+.glasses-text{
+    color: #FFFFFF;
+    font-size: 5rem;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px;
+}
+.products{
+    padding: 50px 0;
+    text-align: center;
+}
+
+div.products .active-yelow2{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #EBB970;
+    display: inline-block;
+    color: #2C2D3C;
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 1.06px;
+    line-height: 43px;
+    margin-bottom: 80px;
+}
+.brend{
+    color: #2C2D3C;
+    font-family: Roboto;
+    font-size: 2.8rem;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+.number{
+    color: #2C2D3C;
+    font-family: Roboto;
+    font-size: 2.6rem;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 120px;
+    
+}
+.contact{
+    padding: 50px 0;
+    text-align: center;
+}
+div.contact .active-yelow3{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #EBB970;
+    display: inline-block;
+    color: #2C2D3C;
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 1.06px;
+    line-height: 43px;
+    margin-bottom: 80px;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+.form-element{
+    border: 1px solid #2C2D3C;
+    opacity: 0.56;
+    height: 45px;
+    width: 262px;
+    color: #2C2D3C;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    letter-spacing: 0.72px;
+    line-height: 26px;
+    margin-right: 12px;
+}
+.form-element2{
+    height: 192px;
+    width: 552px;
+    border: 1px solid #2C2D3C;
+    color: black;
+    font-size: 1.4rem;
+    letter-spacing: 0.72px;
+    line-height: 26px;
+    background-color: #fff;
+}
+.info .info-text{
+
+    color: #2C2D3C;
+    font-family: Roboto;
+    font-size: 2.2rem;
+    letter-spacing: 0.82px;
+    line-height: 26px;
+    margin:  16px;
+}
+.fa-brands{
+    display: inline-block;
+    margin: 20px;
+    color: #2C2D3C;
+    font-size: 20px;
+    
+}
+ul.foot-logo li {
+    list-style: none;
+}
